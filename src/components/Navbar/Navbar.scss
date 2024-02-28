@@ -1,0 +1,35 @@
+.menu-icon-line-top,
+.menu-icon-line-bottom {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  transition: transform 0.4s;
+}
+
+.menu-icon-line-top.transformed {
+  transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-45deg) skew(0deg);
+  transform-style: preserve-3d;
+}
+
+.menu-icon-line-bottom.transformed {
+  transform: translate3d(0px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(45deg) skew(0deg);
+  transform-style: preserve-3d;
+}
+
+.menu-icon-line-middle {
+  transition-duration: 0.1s;
+  transition-property: width;
+  transition-delay: 0.35s;
+}
+
+.menu-icon-line-middle.transformed {
+  width: 0;
+  transition-duration: 0.1s;
+  transition-delay: 0s;
+}
+
+.mobile-nav-wrapper {
+  height: calc(100vh - 104px);
+}
